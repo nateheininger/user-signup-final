@@ -23,10 +23,6 @@ def confirmation():
     email = request.form['email']
     email_error = ''
 
-    if user_name == "":
-        user_error = "Please enter a valid username."
-    else:
-        user_name = user_name
 
     if len(user_name) < 3 or len(user_name) > 20:
         user_error = "Please enter a valid username"
